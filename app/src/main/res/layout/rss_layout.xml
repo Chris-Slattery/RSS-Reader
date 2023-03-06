@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+        />
+
+    />
+
+    <TextView android:id="@+id/statustext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/rss_layout_statustext_text" />
+        />
+
+    <EditText
+        android:id="@+id/urltext"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+    <Button
+        android:id="@+id/download"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+</LinearLayout>
